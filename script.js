@@ -39,14 +39,12 @@ const checagem = () => {
     const IDopcao2 = IDescolha[1];
 
     if (escolha[0] === escolha[1]) {
-        alert("ENCONTROU!");
         cartas[IDopcao1].style.visibility = "hidden";
         cartas[IDopcao2].style.visibility = "hidden";
         acerto.push(escolha[0]);
     } else {
         cartas[IDopcao1].setAttribute('src', 'image/naipe.jpg');
         cartas[IDopcao2].setAttribute('src', 'image/naipe.jpg');
-        alert("Errado. Tente novamente");
     }
 
     escolha.length = 0; 
